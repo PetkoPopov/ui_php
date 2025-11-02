@@ -9,6 +9,6 @@ $repeat_password=$_POST['repeat_password'];
 // to do validation 
 
 echo "</br>";
- var_dump(sha1(sha1($password)));
+ var_dump(sha1($password));
  echo '<br>';
- var_dump(sha1($repeat_password));
+ var_dump(sha1($repeat_password));  

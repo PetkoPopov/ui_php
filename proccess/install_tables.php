@@ -1,12 +1,11 @@
 <?php
 
-//var_dump($_GET);
-
+var_dump($_POST);die;
 if(isset($_GET['database_name']) && !empty($_GET['database_name'])){
     
 $database_name = $_GET['database_name'];
 
-$conn =  new mysqli('localhost','root','',"$database_name");
+$conn =  new mysqli($host,$user,$pass , "$database_name");
 
 $query = "create table if not exists`$database_name`.`users` "
         . "(`id` int not null auto_increment ,"
@@ -27,4 +26,3 @@ echo "<a href='./forms/install_form.php'>install form</a>";
 }
         
 }
-// var_dump($query);

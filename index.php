@@ -10,8 +10,11 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <a href="./forms/register.php">regiter</a><!-- comment -->
+        <a href="./forms/sing_in.php">sing_in</a><!-- comment -->
+        <a href="#">sing_out</a><!-- comment -->
+        <a href="../fiorms/forgot_password.php">forgot_password</a><!-- comment -->
+        
+        
     </body>
 </html>
