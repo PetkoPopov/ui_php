@@ -37,6 +37,7 @@
         <span>Confirm password</span>
     </label>
     </p>
+    <input type="hidden" name="database" value="<?=$database_name?>"/>
     <button >Submit</button>
     <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>

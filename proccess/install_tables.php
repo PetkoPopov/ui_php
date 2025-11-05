@@ -1,11 +1,12 @@
 <?php
 
-var_dump($_POST);die;
-if(isset($_GET['database_name']) && !empty($_GET['database_name'])){
-    
-$database_name = $_GET['database_name'];
 
-$conn =  new mysqli($host,$user,$pass , "$database_name");
+//if(isset($_GET['database_name']) && !empty($_GET['database_name'])){
+    
+$database_name = $_GET['database'];
+
+
+$conn =  new mysqli('localhost','root','' , "$database_name");
 
 $query = "create table if not exists`$database_name`.`users` "
         . "(`id` int not null auto_increment ,"
@@ -18,11 +19,11 @@ echo "<br/>";
 
 
 if($conn->query($query)===true){
-    header('Location:./forms/register_form.php');
+    header("Location:../index.php?database=<?=$database_name?>");
 }else{
     echo "something go wrong";
 //$conn->query($query);
 echo "<a href='./forms/install_form.php'>install form</a>";
 }
         
-}
+//}

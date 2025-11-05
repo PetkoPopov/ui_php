@@ -12,7 +12,7 @@ $pass='';
     $msql->query($query);
     //var_dump($_GET);die;
    $msql->close();
-$conn= new mysqli($host,$user,$pass,$database_name); 
+$conn= new mysqli('localhost','root','',$database_name); 
 
 $query = "create table if not exists`$database_name`.`users` "
         . "(`id` int not null auto_increment ,"
@@ -25,7 +25,7 @@ echo "<br/>";
 
 
 if($conn->query($query)===true){
-    header('Location:./forms/register.php');
+    header("Location:index.php?db_installed=<?=true?>");
 }else{
     echo "something go wrong";
 //$conn->query($query);
