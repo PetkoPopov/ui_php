@@ -4,13 +4,13 @@
     <p class="message">Signup now and get full access to our app. </p>
         <div class="flex">
         <label>
-            <input class="input" name="first_name" type="text" placeholder="" required="">
+            <input class="input" name="first_name" type="text" placeholder=""value="petko" required="">
             <span>Firstname</span>
         </label>
             <p>
                 
         <label>
-            <input class="input" type="text" name="last_name" placeholder="" required="">
+            <input class="input" type="text" name="last_name" placeholder="" value="popov"required="">
             <span>Lastname</span>
         </label>
             </p>
@@ -18,7 +18,7 @@
     <p>
         
     <label>
-        <input class="input" type="email" name="email" placeholder="" required="">
+        <input class="input" type="email" name="email" placeholder="" value="pipjivko@gmail.com"required="">
         <span>Email</span>
     </label> 
         
@@ -26,14 +26,14 @@
     <p>
         
     <label>
-        <input class="input" type="password" name="password" placeholder="" required="">
+        <input class="input" type="password" name="password" placeholder=""value="123"required="">
         <span>Password</span>
     </label>
     </p>
     <p>
         
     <label>
-        <input class="input" type="password" name="repeat_password" placeholder="" required="">
+        <input class="input" type="password" name="repeat_password" placeholder=""value="123" required="">
         <span>Confirm password</span>
     </label>
     </p>
