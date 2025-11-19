@@ -6,6 +6,7 @@
         <title></title>
     </head>
     <body>
+        <?php session_start();var_dump($_SESSION);?>  
         <a href="./forms/register.php">register</a><!-- comment -->
         <p></p>
         <a href="./forms/sing_in.php">sing_in</a><!-- comment -->

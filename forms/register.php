@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../css/index.css"/>
 <form class="form" method="post" action=".././proccess/register.php">
     <p class="title">Register </p>
-    <p class="message">Signup now and get full access to our app. </p>
+    <p class="message">Sign up now and get full access to our app. </p>
         <div class="flex">
         <label>
             <input class="input" name="first_name" type="text" placeholder=""value="petko" required="">
