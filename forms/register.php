@@ -1,4 +1,17 @@
 <link rel="stylesheet" href="../css/index.css"/>
+<?php 
+if(isset($_GET['exists_email'])){
+   ?>
+
+<bold>
+    <h4>
+        this email already exists
+    </h4>
+</bold>
+<?php
+}
+
+?>
 <form class="form" method="post" action=".././proccess/register.php">
     <p class="title">Register </p>
     <p class="message">Sign up now and get full access to our app. </p>
