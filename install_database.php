@@ -19,7 +19,8 @@ $query = "create table if not exists`$database_name`.`users` "
         . " `first_name` varchar(100) ,"
         . "`last_name` varchar(100),"
         . "`email` varchar(100),"
-        . "`password` varchar(100), primary key(`id`) )";
+        . "`password` varchar(100), primary key(`id`) ,"
+        . "`role` int(10) not null default '1' )";
 //$query = "CREATE TABLE `$database_name`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;";
 echo "<br/>";
 

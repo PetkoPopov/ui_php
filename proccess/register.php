@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$_SESSION['db_name'] = 'test123';
+$_SESSION['db_name'] = 'test';
 $database_name = $_SESSION['db_name'];
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
@@ -27,9 +27,9 @@ $password = sha1($password);
 $repeat_password = sha1($repeat_password);
 //  var_dump($password);die;
 if ($password == $repeat_password) {
-    $query = "Insert into $database_name.users (first_name , last_name , email , password ) value(?,?,?,? )";
+    $query = "Insert into $database_name.users (first_name , last_name , email , password ) value(?,?,?,?)";
     $stmt = $msql->prepare($query);
-    $stmt->bind_param('ssss', $first_name, $last_name, $email, $password);
+    $stmt->bind_param('ssss', $first_name, $last_name, $email, $password );
     if($stmt->execute()){
         $msql->close();
     header('Location:../index.php');
